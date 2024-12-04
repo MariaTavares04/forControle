@@ -7,10 +7,19 @@
     */
 
     //ENTRADA
-    const numeros = prompt("Informe cinco números: ");
+    
 
     //PROCESSAMENTO
-    
+    let maior = [];
+
+    for (let numero = 0; numero < 5; numero++) {
+        let numeros = prompt(`Informe o ${numero + 1} números: `);   
+        maior.push(numeros)
+
+        function organizando (a,b) {
+            return a-b;
+        }
+    }   
     //SAÍDA
 
 </script>

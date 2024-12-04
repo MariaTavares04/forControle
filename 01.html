@@ -11,10 +11,21 @@
 
     //ENTRADA
     let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let minusculas = [];
+    let restantes = [];
     
     //PROCESSAMENTO
-    let repetidas = [];
-    for ()
+    for (let contador = 0; contador < listaDeLetras.length; contador++) {
+        const letraAtual = listaDeLetras[contador].toLowerCase();
+        if (minusculas.includes(letraAtual) == true) {
+            restantes.push(letraAtual)
+        } else {
+            minusculas.push(letraAtual);
+        }
+
+    }
+
     //SAÍDA
+    document.write(`${restantes.sort()}`);
 
 </script>
