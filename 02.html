@@ -12,20 +12,14 @@
     const notas = Number(prompt("Informe quantas notas o aluno obteve: "));
 
     //PROCESSAMENTO
-    let todasAsNotas = [];
-    let somas = [];
+    let somas = 0;
 
     for (let aluno = 0; aluno < notas; aluno++) {
         let informar = Number(prompt(`Informe a ${aluno + 1}ª nota do aluno:`));
-        todasAsNotas.push(informar);
+        somas += informar;
     }
 
-    for (let contador = 0; contador < notas; contador++) {
-        let notasSeparadas = todasAsNotas.slice(0, 2);
-        somas.push(notasSeparadas[0] + notasSeparadas[1]);
-    }    
-
-    let media = (somas[0] / notas);
+    let media = (somas / notas);
 
     //SAÍDA
     document.write(`A média do aluno é: ${media}`);

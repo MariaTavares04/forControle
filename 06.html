@@ -6,11 +6,26 @@
     */
 
     //ENTRADA
+    const numInicial = Number(prompt(`Informe o número inicial:`));
+    const numFinal = Number(prompt(`Informe o número final: `));
 
-    
     //PROCESSAMENTO
+    let par = [];
+    let impar = [];
 
-    
+    if (numInicial < numFinal) {
+
+        for (let contador = numInicial + 1; contador < numFinal; contador++) {
+            if (contador % 2 == 0) {
+                par.push(contador)
+            } else {
+                impar.push(contador)
+            }
+        }
+    }
+
     //SAÍDA
+    document.write(`Os números pares são: ${par} <br>`);
+    document.write(`Os números impares são: ${impar}`);
 
 </script>

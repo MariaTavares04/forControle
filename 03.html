@@ -13,13 +13,19 @@
     let maior = [];
 
     for (let numero = 0; numero < 5; numero++) {
-        let numeros = prompt(`Informe o ${numero + 1} números: `);   
+        let numeros = prompt(`Informe o ${numero + 1}º número: `);   
         maior.push(numeros)
 
         function organizando (a,b) {
             return a-b;
         }
-    }   
+
+        maior.sort(organizando);
+    }
+    
+    let maiorNumero = maior.slice(-1);
+
     //SAÍDA
+    document.write(`${maiorNumero}`)
 
 </script>
