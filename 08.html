@@ -6,11 +6,19 @@
     */
 
     //ENTRADA
-
+    let numeros = [];
+    let somando = 0;
 
     //PROCESSAMENTO
+    for (let num = 0; num < 5; num++) {
+        let informado = Number(prompt(`Informe o ${lendoNum + 1}º número:`));
 
+        somando += informado;
+        
+    };
+    let media = somando / 5;
 
     //SAÍDA
+    document.write(`A soma de todos os números é: ${somando}, a média dos números é ${media}`);
 
 </script>

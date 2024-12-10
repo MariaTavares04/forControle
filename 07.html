@@ -7,12 +7,17 @@
 
     //ENTRADA
     let habitantes = 80000;
-    let atinja = 200000;
+    let maxima = 200000;
+    let ano = 0;
     
-
     //PROCESSAMENTO
+    for (ano = 1; habitantes < maxima; ano++) {
+        
+        habitantes *= 1.03;
 
-    
+    }
+
     //SAÍDA
+    document.write(`Para a cidade atingir 200000 irá demorar ${ano} anos.`);
 
 </script>
