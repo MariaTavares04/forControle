@@ -10,8 +10,15 @@
     let dez = 50000;
     
     //PROCESSAMENTO
+    for (let ano = 1; ano <= 5; ano++) {
+        cinco *= 1.015;  
+    };
+    for (let ano = 1; ano <= 10; ano++) {
+        dez *= 1.015;
+    };
     
-
     //SAÍDA
+    document.write(`Em cinco anos a cidade terá ${cinco.toFixed(0)} habitantes. <br> 
+    Em dez anos a cidade terá ${dez.toFixed(0)} habitantes.`)
 
 </script>

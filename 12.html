@@ -6,11 +6,15 @@
     */
 
     //ENTRADA
-
+    let investimento = 1000;
+    let dias = 0;
 
     //PROCESSAMENTO
-
+    for (dias = 1; investimento <= 2000; dias++) {
+        investimento *= 1.02;
+    }
 
     //SAÍDA
+    document.write(`Para que Joãozinho consiga o tatal de R$ 2.000,00 serão necessários ${dias} dias`);
 
 </script>
