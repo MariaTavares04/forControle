@@ -1,24 +1,27 @@
 <meta charset="UTF-8">
 <script>
     /*
-    PROBLEMA: SOMA E MÉDIA
+    PROBLEMA
     Faça um programa que leia 5 números e informe a soma e média dos números.
     */
 
     //ENTRADA
-    let numeros = [];
-    let somando = 0;
 
     //PROCESSAMENTO
-    for (let num = 0; num < 5; num++) {
-        let informado = Number(prompt(`Informe o ${lendoNum + 1}º número:`));
-
-        somando += informado;
+    let somando = 0;
+    let media = 0;
+    
+    for (let num = 1; num < 6; num++) {
+        let informado = Number(prompt(`Informe o ${num} número:`));
         
-    };
-    let media = somando / 5;
+        somando += informado;
+    }
+
+    media = somando / 5;
 
     //SAÍDA
-    document.write(`A soma de todos os números é: ${somando}, a média dos números é ${media}`);
+
+    document.write(`A soma dos números é: ${somando} <br>
+    A média dos números é: ${media}`);
 
 </script>
